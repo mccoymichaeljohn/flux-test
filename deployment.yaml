@@ -15,8 +15,8 @@ spec:
       spec:  
          containers:  
          - name: expressjs-backend  
-         image: mjmccoycontainerregistry.azurecr.io/fluxexamples/express-server:flux
-         ports:  
-         - containerPort: 4000  
+           image: mjmccoycontainerregistry.azurecr.io/fluxexamples/express-server:flux
+           ports:  
+           - containerPort: 4000  
          imagePullSecrets:
          - name: acr-secret
