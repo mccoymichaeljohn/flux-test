@@ -11,7 +11,7 @@ spec:
    template:  
       metadata:  
          labels:  
-         app: expressjs-backend  
+            app: expressjs-backend  
       spec:  
          containers:  
          - name: expressjs-backend  
