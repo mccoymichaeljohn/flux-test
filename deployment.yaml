@@ -4,7 +4,12 @@ metadata:
    name: expressjs-backend
    namespace: default
 spec:
-   replicas: 2
+   replicas: 5  
+   strategy:
+      type: RollingUpdate
+      rollingUpdate:
+         maxUnavailable: 1
+         maxSurge: 1
    selector:
       matchLabels:
          app: expressjs-backend
